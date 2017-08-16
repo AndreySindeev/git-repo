@@ -1,4 +1,4 @@
-appid = "e69b8d7066225d189a9218ebade62341"# полученный при регистрации на OpenWeatherMap.org. Что-то вроде такого набора букв и цифр: "6d8e495ca73d5bbc1d6bf8ebd52c4123"
+appid = "e69b8d7066225d189a9218ebade62341"# полученный при регистрации на OpenWeatherMap.org. 
 
 import requests
 
