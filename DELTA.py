@@ -3,8 +3,9 @@ from tkinter import *
 def get_delta():
     results1 = int(last_release.get())
     results2 = int(new_release.get())
-    delta = results2 / results1
-    print(delta)
+    delta = results2 / results1 * 100 - 100
+    a1 = Label(windows, width=30, text=delta, fg='red')
+    a1.pack()
 
 windows = Tk()
 windows.geometry('500x500')
@@ -22,6 +23,7 @@ last_release.pack()
 #задаём поле ввода для нового релиза
 new_release = Entry(windows, width = 30, bg='red')
 new_release.pack()
+
 
 
 #создаём кнопку ,которая выводит нам результат
