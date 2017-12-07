@@ -1,0 +1,7 @@
+import xml.etree.ElementTree as ET
+tree = ET.ElementTree(file='Load.xml')
+tree.getroot()
+root = tree.getroot()
+(root.tag, root.attrib)
+for each in tree.iter(tag='Series'):
+    print(each.attrib['StatString'])
