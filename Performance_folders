@@ -1,0 +1,22 @@
+import os
+
+path = r'C:\proto'
+
+projectname = '\R58-SP2'
+
+#folder projects
+folders = ['PPS', 'BW', 'Capacity', 'CPS']
+
+def createFolders(path):
+    if not os.path.exists(path):
+        os.mkdir(path)
+
+fullPath = os.path.join(path, projectname)
+
+createFolders(fullPath)
+
+for f in folders:
+    subfolders = os.path.join(fullPath, f)
+    if not os.path.exists(subfolders):
+        createFolders(subfolders)
+        print(subfolders)
